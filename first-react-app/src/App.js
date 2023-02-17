@@ -1,4 +1,4 @@
-import {useState, useEffect} from "react";
+import { useState } from "react";
 import "./App.css";
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
@@ -6,15 +6,6 @@ import SearchIcon from "./search.svg";
 //? key:8ab3e61a
 
 const API_URL = "http://www.omdbapi.com?apikey=8ab3e61a";
-
-const movie1 = {
-  Title: "Shinchan",
-  Year: "1992–",
-  imdbID: "tt12853970",
-  Type: "series",
-  Poster:
-    "https://m.media-amazon.com/images/M/MV5BN2VmOWRlMjEtY2M1NC00NjdmLTg1MjktMDYxNzg3ZTNiMDUxXkEyXkFqcGdeQXVyNTk5ODg4NDA@._V1_SX300.jpg",
-};
 
 const App = () => {
   const [movies, setMovies] = useState([]);
